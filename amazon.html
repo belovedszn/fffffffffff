@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="../styles/amazon-header.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/amazon.css">
+</head>
+<body>
+
+    <div class="amazon-header">
+        <div class="amazon-header-left-section">
+            <a href="#" class="header-link">
+                <img src="/supersimple dev/images/amazon-logo-white.png"
+                 alt="" class="amazon-logo">
+                <img 
+                src="/supersimple dev/images/amazon-mobile-logo-white.png" 
+                alt="" class="amazon-mobile-logo">
+            </a>
+        </div>
+
+        <div class="amazon-header-middle-section">
+            <input type="text" class="search-bar" placeholder="Search">
+
+            <button class="search-button">
+                <img src="/supersimple dev/images/icons/search-icon.png" alt="" class="search-icon">
+            </button>
+        </div>
+
+        <div class="amazon-header-right-section">
+            <a href="../html/order.html" class="orders-link header-link">
+                <span class="returns-text">Returns</span>
+                <span class="orders-text">& Orders</span>
+            </a>
+
+            <a href="../html/checkout.html" class="cart-link header-link">
+                <img src="/supersimple dev/images/icons/cart-icon.png" alt="" class="cart-icon">
+                <div class="cart-quantity js-cart-quantity">0</div>
+                <div class="cart-text">Cart</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="products-grid js-products-grid">
+
+          <!--
+          <div class="product-container">
+            <div class="product-image-container">
+              <img class="product-image"
+                src="/supersimple dev/images/products/variations/adults-plain-cotton-tshirt-2-pack-black.jpg">
+            </div>
+  
+            <div class="product-name limit-text-to-2-lines">
+              Adults Plain Cotton T-Shirt - 2 Pack
+            </div>
+  
+            <div class="product-rating-container">
+              <img class="product-rating-stars"
+                src="/supersimple dev/images/ratings/rating-40.png">
+              <div class="product-rating-count link-primary">
+                87
+              </div>
+            </div>
+  
+            <div class="product-price">
+              $10.90
+            </div>
+  
+            <div class="product-quantity-container">
+              <select>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+  
+            <div class="product-spacer"></div>
+  
+            <div class="added-to-cart">
+              <img src="/supersimple dev/images/icons/checkmark.png">
+              Added
+            </div>
+  
+            <button class="add-to-cart-button button-primary">
+              Add to Cart
+            </button>
+          </div>
+  
+          <div class="product-container">
+            <div class="product-image-container">
+              <img class="product-image"
+                src="/supersimple dev/images/products/variations/men-chino-pants-green.jpg">
+            </div>
+  
+            <div class="product-name limit-text-to-2-lines">
+              Men Chino Pants - Green
+            </div>
+  
+            <div class="product-rating-container">
+              <img class="product-rating-stars"
+                src="/supersimple dev/images/ratings/rating-45.png">
+              <div class="product-rating-count link-primary">
+                127
+              </div>
+            </div>
+  
+            <div class="product-price">
+              $20.95
+            </div>
+  
+            <div class="product-quantity-container">
+              <select>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+  
+            <div class="product-spacer"></div>
+  
+            <div class="added-to-cart">
+              <img src="/supersimple dev/images/icons/checkmark.png">
+              Added
+            </div>
+  
+            <button class="add-to-cart-button button-primary">
+              Add to Cart
+            </button>
+          </div>
+  
+          <div class="product-container">
+            <div class="product-image-container">
+              <img class="product-image"
+                src="/supersimple dev/images/products/men-cozy-fleece-zip-up-hoodie-red (1).jpg">
+            </div>
+  
+            <div class="product-name limit-text-to-2-lines">
+              Men Cozy Fleece Zip Up Hoodie - Red
+            </div>
+  
+            <div class="product-rating-container">
+              <img class="product-rating-stars"
+                src="/supersimple dev/images/ratings/rating-40.png">
+              <div class="product-rating-count link-primary">
+                56
+              </div>
+            </div>
+  
+            <div class="product-price">
+              $7.99
+            </div>
+  
+            <div class="product-quantity-container">
+              <select>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+  
+            <div class="product-spacer"></div>
+  
+            <div class="added-to-cart">
+              <img src="/supersimple dev/images/icons/checkmark.png">
+              Added
+            </div>
+  
+            <button class="add-to-cart-button button-primary">
+              Add to Cart
+            </button>
+          </div>
+        -->
+        </div>
+      </div>
+
+<!--      <script src="../script/cart.js"></script> -->
+<!--      <script src="../script/products.js"></script> -->
+    <script type="module" src="../script/amazon.js"></script>
+</body>
+</html>
