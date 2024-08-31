@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.right {
+  visibility: hidden;
+}
+
+.first-box div {
+  font-size: 30px;
+  text-align: center;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.first-box div:nth-child(2) {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.item input {
+  width: 400px;
+  height: 250px;
+  font-size: 20px;
+  padding-bottom: 200px;
+  padding-left: 10px;
+  color: #000;
+  border: 1px solid #703d92;
+  outline: #703d92;
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+
+.btn button {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn .first-btn {
+  background: #fff;
+  border: 1px solid #703d92;
+  color: #703d92;
+  outline: #703d92;
+}
+
+.btn .second-brn {
+  background: #703d92;
+  color: #fff;
+  outline: #fff;
+  border: 1px solid #fff;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 999px) {
+  .web {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 450px) {
+  .item input {
+    width: 300px;
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  .btn button {
+    width: 250px;
+  }
+
+  .first-box div {
+    font-size: 20px;
+  }
+
+  .container {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 300px) {
+    .item input {
+        width: 250px;
+    }
+    .btn button {
+        width: 200px;
+      }
+}
+
+.try-again {
+    font-size: 20px;
+}
+
+
+.btnInput:enabled {
+    opacity: 1;
+    pointer-events: auto;
+}
